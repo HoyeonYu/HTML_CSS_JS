@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src = https://code.jquery.com/jquery-3.4.1.js></script>
+        <script>
+            var colors = ['gold', 'green', 'blue'];
+            var currentColor = 0;
+
+            $(document).ready(function()
+            {
+                $('.box').css(
+                    {
+                        backgroundColor: colors[currentColor]
+                    }
+                ).click(function()
+                {
+                    currentColor++;
+                    currentColor %= 3;
+                    $(this).css(
+                        {
+                            backgroundColor: colors[currentColor]
+                        }
+                    );
+                });
+            });
+        </script>
+        <style>
+            .box
+            {
+                width: 100px;
+                height: 50px;
+                border-radius: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "box"></div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #info {color :hotpink;}
+            #info:hover {color :orange;}
+            #info h1:active {color :orangered;}
+
+            input:enabled {background :lightcoral;}
+            input:disabled {background :khaki;}
+            input:focus {background :greenyellow;}
+
+            ul > li:nth-child(2n) {background: lightseagreen;}
+            ul > li:nth-child(2n-1) {background:lime;}
+
+        </style>
+    </head>
+
+    <body>
+        <div id = "info">
+            <h1>마우스를 올리면 색이 바뀝니다</h1>
+            <h2>Hello World!</h2>
+        </div>
+        
+        <div>
+            <h1>사용 가능</h1>
+            <input>
+        </div>
+        
+        <form>
+            <input type = "checkbox" id = "checkbox">
+        </form>
+        
+        <div>
+            <h1>사용 불가능</h1>
+            <input disabled = "disabled">
+        </div>
+
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+            <li>fourth</li>
+            <li>fifth</li>
+            <li>sixth</li>
+        </ul>
+        
+    </body>
+</html>

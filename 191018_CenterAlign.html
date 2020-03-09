@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0; padding: 0;
+            }
+
+            body{
+                margin: 0 auto; width: 700px;    
+            }
+
+            .conatiner{
+                width: 500px; height: 300px; border: 3px solid black;
+                position: relative; overflow: hidden;
+            }
+
+            .container > *{
+                width: 100px; height: 100px; border-radius: 50%; position: absolute;
+                text-align: center; line-height: 100px;
+            }
+
+            .container .c1{
+                background:slateblue; left: 10px; top: 10px;
+            }
+
+            .container .c2{
+                background:tomato; right: 10px; top: 10px;
+            }
+
+            .container .c3{
+                background:violet; left: 10px; bottom: 10px;
+            }
+
+            .container .c4{
+                background:seagreen; right: 10px; bottom: 10px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "word"><h1>Hello World!</h1></div>
+
+        <div class = "container">
+            <div class = "c1">1</div>
+            <div class = "c2">2</div>
+            <div class = "c3">3</div>
+            <div class = "c4">4</div>
+        </div>
+
+        <div class = "image"></div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>    
+        <script src = "https://masonry.desandro.com/masonry.pkgd.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                for (var i = 0; i < 100; i++)
+                {
+                    $('<div class = "box"></div>').css(
+                        {
+                            width: 100,
+                            height: Math.floor(Math.random() * 100) + 50
+                        }
+                    ).appendTo('body');
+                }
+
+                $('body').masonry(
+                    {
+                        columnWidth: 110
+                    }
+                );
+            });
+        </script>
+        
+        <style>
+                * {margin: 0; padding: 0;}
+    
+                .box {
+                    background: black;
+                    margin: 5px;
+                }
+            
+        </style>
+    </head>
+    <body>
+        
+    </body>
+</html>

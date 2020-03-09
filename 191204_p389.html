@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = https://code.jquery.com/jquery-3.4.1.js></script> 
+        <style>
+        </style>
+        <script>
+            $(document).ready(function()
+            {
+                $('.box').css(
+                {
+                    width: 100,
+                    height: 100,
+                    background: 'chartreuse'
+                }).on('click', function()
+                {
+                    $(this).css(
+                        {
+                            background: 'red'
+                        }
+                    );
+                }).on('mouseenter', function()
+                {
+                    $(this).css(
+                        {
+                            background: 'blue'
+                        }
+                    );
+                }).on('mouseleave', function()
+                {
+                    $(this).css(
+                        {
+                            background: 'chartreuse'
+                        }
+                    );
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class = "box"></div>
+    </body>
+</html>

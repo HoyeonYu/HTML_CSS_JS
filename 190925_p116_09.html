@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>글 작성하기</h1>
+        <form>
+            <!--작성자-->
+            <label for = "writer"><b>작성자</b></label>
+            <input id = "writer" type = "text">
+            <br>
+            
+            <!--아이디-->
+            <label for = "ID"><b>아이디</b></label>
+            <input id = "ID" type = "text">
+            <br>
+            
+            <!--이메일-->
+            <label for = "email"><b>이메일</b></label>
+            <input id = "email" type = "text">
+            <label>@</label>
+            <input type = "text">
+            <br>
+
+            <!--휴대폰-->
+            <label for = "phone"><b>휴대폰</b></label>
+            <select>
+                <option>010</option>
+                <option>011</option>
+                <option>016</option>
+                <option>019</option>
+                <option>02</option>
+            </select>
+            <label>-</label>
+            <input id = "phone" type = "text">
+            <label>-</label>
+            <input type = "text">
+            <br>
+            
+            <!--글제목-->
+            <label for = "title"><b>글제목</b></label>
+            <input id = "title" type = "text">
+            <br>
+
+            <!--내용, 제출 버튼-->
+            <table>
+                <tr>
+                    <th width="46"><b>내용</b></th>
+                    <td><textarea cols = "30" rows = "8"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type = "button" value = "제출"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

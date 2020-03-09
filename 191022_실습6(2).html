@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {background:rgb(204, 222, 255); margin: 0 auto; width: 1000px;}
+            .title > * {text-align: center;}
+
+            .headTitle {background:darkblue; border: 3px solid black;
+                        color: white; font-size: 150%;}
+            .subTitle {background:darkcyan; border: 1px solid black;
+                       color: white;}
+
+            .circle {position: relative; height: 350px; border: 3px solid black;}
+            .circle > * {width: 100px; height: 100px; border-radius: 50%; position: absolute;}
+            .circleCenter {width: 200px; height: 200px; left: 50%; top: 50%; 
+                        margin-left: -100px; margin-top: -100px;
+                        border-radius: 30%; background:mediumpurple;}
+            .circle1 {background:lightcoral; left: 10%; top: 10%;}
+            .circle2 {background:lightgreen; right: 10%; top: 10%;}
+            .circle3 {background:lightseagreen; left: 10%; bottom: 10%;}
+            .circle4 {background:lightpink; right: 10%; bottom: 10%;}
+
+            .list {background:darkseagreen;}
+
+            .image > img {float: left; margin: 10px; margin-left: 0;}
+            .image {border: 3px solid black;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class = "title">
+                <div class = "headTitle"><h1>Hoyeon World!</h1></div>
+                <div class = "subTitle"><h1>hoyeon html</h1></div>                
+            </div>
+        </header>
+
+        <aritcle>
+            <div class = "circle">
+                <div class = "circleCenter"></div>
+                <div class = "circle1"></div>
+                <div class = "circle2"></div>
+                <div class = "circle3"></div>
+                <div class = "circle4"></div>
+            </div>
+
+            <div class = "list">
+                <ul>
+                    <li>HTML5</li>
+                        <ul>
+                            <li><a href = #>데이터</a></li>
+                            <li><a href = #>데이터</a></li>
+                        </ul>
+
+                    <li>CSS3</li>
+                        <ul>
+                            <li><a href = #>데이터</a></li>
+                            <li><a href = #>데이터</a></li>
+                            <li><a href = #>데이터</a></li>
+                        </ul>
+
+                    <li>JS</li>
+                        <ul>
+                            <li><a href = #>데이터</a></li>
+                            <li><a href = #>데이터</a></li>
+                            <li><a href = #>데이터</a></li>
+                            <li><a href = #>데이터</a></li>
+                        </ul>
+                </ul>
+            </div>
+
+            <div class = "inputButton">
+                <form>
+                    <input type = "search">
+                    <input type = "submit" value = "search"><br><br>
+                </form>
+            </div>
+
+            <div class = "select">
+                <form>
+                    <select>
+                        <optgroup label = "치킨">
+                            <option>후라이드</option>
+                            <option>양념</option>
+                            <option>깐풍</option>
+                        </optgroup>
+                    </select>
+                </form>
+            </div>
+
+            <div class = "image">
+                <img src = "bakbird.png" width = "300">
+                <p>
+                    Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD
+                    Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD
+                    Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD Hello BAKBIRD
+                </p><br>
+            </div>
+        </aritcle>
+
+        <footer>
+            <h1>Created By Hoyeon Yu</h1>
+        </footer>
+    </body>
+</html>

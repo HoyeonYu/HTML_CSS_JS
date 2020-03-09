@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var input = prompt("입력해주세요", "입력");
+
+            var first = parseInt(input / 1000);
+            var second = parseInt((input % 1000) / 100);
+            var third = parseInt((input % 100) / 10);
+            var fourth = parseInt(input % 10);
+
+            alert('천의 자리 : ' + first + '  백의 자리 : ' + 
+                    second + '  십의 자리 : ' + third + '  일의 자리 : ' + fourth);
+        </script>
+    </head>
+</html>

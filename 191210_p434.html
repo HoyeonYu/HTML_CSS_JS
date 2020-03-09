@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                var width = $('[data-role = "slider"]').attr('data-width');
+                var height = $('[data-role = "slider"]').attr('data-height');
+                var count = $('[data-role = "slider"] div.item').length;
+
+                $('[data-role = "slider"]').css({
+                    position: 'relative',
+                    overflow: 'hidden',
+                    width: width,
+                    height: height
+                }).find('.container').css({
+                    position: 'absolute',
+                    width: count * width,
+                    overflow: 'hidden'
+                }).find('.item').css({
+                    width: width,
+                    height: height,
+                    float: 'left'
+                });
+
+                var currentPage = 0;
+                var changePage = function()
+                {
+                    $('[data-role = "slider"] > .container').animate({
+                        left: -currentPage * width
+                    }, 500);
+                };
+
+                $('.leftButton').click(function()
+                {
+                    if (currentPage > 0)
+                    {
+                        currentPage--;
+                        changePage();
+                    }
+                });            
+
+                $('.rightButton').click(function()
+                {
+                    if (currentPage < count - 1)
+                    {
+                        currentPage++;
+                        changePage();
+                    }
+                });
+            });
+        </script>
+
+        <style>
+            div.item:nth-child(1) {background: rebeccapurple;}
+            div.item:nth-child(2) {background:rosybrown;}
+            div.item:nth-child(3) {background:sandybrown;}
+        </style>
+    </head>
+
+    <body>
+        <div data-role = "slider" data-width = "500" data-height = "300">
+            <div class = "container">
+                <div class = "item">
+                    <h1>Hello</h1>
+                    <p>Hi</p>
+                </div>
+
+                <div class = "item">
+                    <h1>Hello</h1>
+                    <p>Hi</p>
+                </div>
+
+                <div class = "item">
+                    <h1>Hello</h1>
+                    <p>Hi</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class = "leftButton">To Left</button>
+        <button class = "rightButton">To Right</button>
+        
+    </body>
+</html>

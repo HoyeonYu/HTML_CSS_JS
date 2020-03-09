@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #header{
+                width : 800px; margin : 0 auto;
+                background : red;
+            }
+
+            #wrap{
+                width : 800px; margin : 0 auto;
+                overflow : hidden;
+            }
+            
+            #aside{
+                width : 200px; float : left;
+                background : blue;
+            }
+
+            #content{
+                width : 600px; float : left;
+                background : green;
+            }
+
+            #hello1{
+                background : skyblue;
+            }
+
+            #hello2{
+                color : tomato;
+            }
+
+            #hello3{
+                color : steelblue;
+            }
+
+            .oddList {color : rebeccapurple;}
+            .evenList {color : sienna;}
+
+            input[type = "text"] {background : skyblue;}
+            input[type = "password"] {background : slateblue;}
+
+            #h1id > h1 {color : red;}
+
+        </style>
+    </head>
+
+    <body>
+        <div id = "header">
+                <h1>#header 태그</h1>
+        </div>
+        <div id = "wrap">
+            <div id = "aside">
+                    <h1>#aside 태그</h1>
+            </div>
+            <div id = "content">
+                    <h1>#content 태그</h1>
+            </div>
+        </div>
+        
+        <div id = "hello1">
+                <h1>안녕하세요</h1>
+        </div>
+        <div id = "hello2">
+                <h2>안녕하세요</h2>
+        </div>
+        <div id = "hello3">
+                <h3>안녕하세요</h3>
+        </div>
+
+        <ul>
+            <li class = "oddList">사과</li>
+            <li class = "evenList">바나나</li>
+            <li class = "oddList">오렌지</li>
+            <li class = "evenList">감</li>
+        </ul>
+
+        <form>
+            <input type = "text" name = "text" value = "입력하세요">
+            <input type = "password" name = "password" value = "비밀번호">
+        </form>
+
+        <div id = "h1id">
+            <h1>Lorem ipsum</h1>
+        </div>
+
+    </body>
+
+
+</html>

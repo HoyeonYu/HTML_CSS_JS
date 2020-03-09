@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('button').click(function(){
+                    $('img').attr('src', function(){
+                        return 'bakbird.png'
+                    });
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <button>Change</button>
+        <img src = "bts사진.png" width = "200px">
+    </body>
+</html>

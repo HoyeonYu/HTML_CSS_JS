@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        </style>
+        <script src = https://code.jquery.com/jquery-3.4.1.js></script> 
+        <script>
+            $(document).ready(function()
+            {
+                $('.box').css(
+                    {
+                        width: 100,
+                        height: 100,
+                        background: 'blue'
+                    }
+                ).animate(
+                    {
+                        width: 300,
+                        height: 100,
+                        background: 'blue'
+                    }, 500).animate(
+                        {
+                            width: 100,
+                            height: 100
+                        }
+                )
+            });
+        </script>
+    </head>
+    <body>
+        <div class = "box"></div>
+    </body>
+</html>
